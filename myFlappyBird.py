@@ -190,11 +190,11 @@ def run():
     canvas.data.bird1 = Tkinter.PhotoImage(file='bird1.gif')     
     canvas.data.bird2 = Tkinter.PhotoImage(file='bird2.gif')
 
-    canvas.data.bird1Button = Radiobutton(canvas, text="Bird1", image = canvas.data.bird1, variable=b, value="bird1")  
-    canvas.data.bird2Button = Radiobutton(canvas, text="Bird2", image = canvas.data.bird2, variable=b, value="bird2")  
+    canvas.data.bird1Button = Radiobutton(root, text="Bird1", image = canvas.data.bird1, variable=b, value="bird1")  
+    canvas.data.bird2Button = Radiobutton(root, text="Bird2", image = canvas.data.bird2, variable=b, value="bird2")  
     
-    canvas.data.nightButton = Radiobutton(canvas, text="Night", variable=v, value="Night")  
-    canvas.data.dayButton = Radiobutton(canvas, text="Day", variable=v, value="Day")  
+    canvas.data.nightButton = Radiobutton(root, text="Night", variable=v, value="Night")  
+    canvas.data.dayButton = Radiobutton(root, text="Day", variable=v, value="Day")  
     
     canvas.data.dayButton.pack(anchor=W, side = 'left')
     canvas.data.nightButton.pack(anchor=W, side ="left")
